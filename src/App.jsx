@@ -12,11 +12,11 @@ import "./index.css";
 
 const App = () => {
   return (
-    <div className="app flex flex-row w-full min-h-screen">
+    <div className="app bg-gray-100 flex flex-row w-full min-h-screen">
       <div className="navbar text-white w-1/5 min-h-screen fixed top-0 z-50">
         <Navbar />
       </div>
-      <div className="main w-4/5 min-h-screen ml-96">
+      <div className="main bg-gray-100 w-4/5 min-h-screen ml-96">
         <div className="routes">
           <Routes>
             <Route exact path="/" element={<Homepage />} />

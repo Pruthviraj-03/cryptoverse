@@ -30,7 +30,7 @@ const Navbar = () => {
     <div className="navcontainer p-5 text-white flex flex-col w-full p-8">
       <div className="projectlogo flex flex-row">
         <img src={icon} alt="icon" className="projectlogoicon h-10 w-10" />
-        <h2 className="logoname text-white font-bold text-3xl no-underline ml-4 tracking-wide">
+        <h2 className="logoname hover:text-blue-600 text-white font-bold text-3xl no-underline ml-4 tracking-wide">
           <Link to="/">Cryptoverse</Link>
         </h2>
         {/* <button className="menu-control-container" onClick={() => setActiveMenu(!activeMenu)}><RiMenu3Line /></button> */}
@@ -38,38 +38,38 @@ const Navbar = () => {
       {activeMenu && (
         <div className="navitemlist w-full mt-8">
           <Link to="/">
-            <div className="home flex flex-row cursor-pointer h-12 w-full rounded-lg mb-4 ml-0 pl-4 pt-2 pr-3 text-lg">
+            <div className="home hover:bg-blue-600 flex flex-row cursor-pointer h-12 w-full rounded-lg mb-4 ml-0 pl-4 pt-2 pr-3 text-lg">
               <span className="homeicon text-lg text-gray-500 mt-1 mr-4">
                 <FaHome />{" "}
               </span>
-              <h3 className="navcomname">Home</h3>
+              <h3 className="navcomname text-gray-500">Home</h3>
             </div>
           </Link>
 
           <Link to="/cryptocurrencies">
-            <div className="cryptocurrencies flex flex-row cursor-pointer h-12 w-full rounded-lg mb-4 ml-0 pl-4 pt-2 pr-3 text-lg">
+            <div className="cryptocurrencies hover:bg-blue-600 flex flex-row cursor-pointer h-12 w-full rounded-lg mb-4 ml-0 pl-4 pt-2 pr-3 text-lg">
               <span className="cryptocurrenciesicon text-lg text-gray-500 mt-1 mr-4">
                 <FaCoins />{" "}
               </span>
-              <h3 className="navcomname">Cryptocurrencies</h3>
+              <h3 className="navcomname text-gray-500">Cryptocurrencies</h3>
             </div>
           </Link>
 
           <Link to="/exchanges">
-            <div className="exchanges flex flex-row cursor-pointer h-12 w-full rounded-lg mb-4 ml-0 pl-4 pt-2 pr-3 text-lg">
+            <div className="exchanges hover:bg-blue-600 flex flex-row cursor-pointer h-12 w-full rounded-lg mb-4 ml-0 pl-4 pt-2 pr-3 text-lg">
               <span className="exchangesicon text-lg text-gray-500 mt-1 mr-4">
                 <FaExchangeAlt />{" "}
               </span>
-              <h3 className="navcomname">Exchanges</h3>
+              <h3 className="navcomname text-gray-500">Exchanges</h3>
             </div>
           </Link>
 
           <Link to="/news">
-            <div className="news flex flex-row cursor-pointer h-12 w-full rounded-lg mb-4 ml-0 pl-4 pt-2 pr-3 text-lg">
+            <div className="news hover:bg-blue-600 flex flex-row cursor-pointer h-12 w-full rounded-lg mb-4 ml-0 pl-4 pt-2 pr-3 text-lg">
               <span className="newsicon text-lg text-gray-500 mt-1 mr-4">
                 <FaNewspaper />{" "}
               </span>
-              <h3 className="navcomname">News</h3>
+              <h3 className="navcomname text-gray-500">News</h3>
             </div>
           </Link>
         </div>
