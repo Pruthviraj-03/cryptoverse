@@ -18,7 +18,7 @@ const News = ({ simplified }) => {
           url: "https://cryptocurrency-news2.p.rapidapi.com/v1/coindesk",
           headers: {
             "X-RapidAPI-Key":
-              "07e53fe405mshfb53f09b4c35667p1618fbjsn933bef5d77d2",
+              "801cfd6090msh43ba5a116c51f0ep1004f8jsna6de03eee58b",
             "X-RapidAPI-Host": "cryptocurrency-news2.p.rapidapi.com",
           },
         };
@@ -46,7 +46,7 @@ const News = ({ simplified }) => {
     <div className="newspage w-full">
       <div className="news-container w-full">
         {!simplified && (
-          <div className="searchcrypto">
+          <div className="searchcrypto laptop:ml-96 tablet:ml-72">
             <input
               type="text"
               placeholder="Search News"

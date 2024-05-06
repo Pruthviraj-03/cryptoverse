@@ -42,7 +42,7 @@ const Exchanges = () => {
 
   return (
     <div className="exchangepage w-full flex items-center justify-center">
-      <div className="exchange-table w-11/12 border-collapse ml-2">
+      <div className="exchange-table w-11/12 border-collapse ml-2 laptop:mb-5 tablet:mb-5">
         <div className="table-header flex mt-4">
           <div className="header-item flex-1 p-4 text-center font-bold">
             Exchanges
@@ -61,7 +61,7 @@ const Exchanges = () => {
         {exchangesList.map((exchange, index) => (
           <div
             key={index}
-            className="exchange-row flex items-center justify-center flex-row border border-gray-300 w-11/12 mt-1 mb-1 ml-9 bg-gray-200 cursor-pointer"
+            className="exchange-row flex items-center justify-center flex-row border border-gray-300 w-11/12 mt-1 mb-1 ml-9 bg-gray-200 cursor-pointer tablet:ml-5"
           >
             <div className="exchange-item-data w-2/5 flex flex-row bg-gray-200 p-2 pl-6 text-center cursor-pointer gap-4">
               <strong>{index + 1}.</strong>
@@ -80,7 +80,7 @@ const Exchanges = () => {
               {millify(exchange.market_cap)}
             </div>
             <div
-              className="exchange-price-change flex items-center pl-20 justify-center h-full w-1/4"
+              className="exchange-price-change flex items-center pl-20 justify-center h-full w-1/4 laptop:pl-9 tablet:pl-6"
               style={{
                 color:
                   exchange.price_change_percentage_24h < 0 ? "red" : "green",

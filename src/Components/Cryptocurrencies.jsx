@@ -26,7 +26,7 @@ const Cryptocurrencies = ({ simplified }) => {
     <>
       <div className="cryptocurrencypage w-full">
         {!simplified && (
-          <div className="searchcrypto">
+          <div className="searchcrypto laptop:ml-96 tablet:ml-72">
             <input
               type="text"
               placeholder="Search Cryptocurrency"
@@ -35,10 +35,10 @@ const Cryptocurrencies = ({ simplified }) => {
             />
           </div>
         )}
-        <div className="crypto-card-container flex flex-wrap h-full w-full p-5">
+        <div className="crypto-card-container flex flex-wrap h-full w-full p-5 laptop:p-3 tablet:p-2">
           {cryptos?.map((currency) => (
             <Link key={currency.uuid} to={`/crypto/${currency.uuid}`}>
-              <div className="cryptocard">
+              <div className="cryptocard laptop:h-48 laptop:w-56 laptop:mx-2 tablet:h-46 tablet:w-56 tablet:mx-1.5">
                 <div className="firsthalf flex flex-row items-center justify-between mt-4 mb-4 h-1/4 w-full">
                   <span className="coinname font-medium h-5/6 w-9/12 pt-2 pl-4">
                     {`${currency.rank}. ${currency.name}`}{" "}

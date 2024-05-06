@@ -26,7 +26,7 @@ const Homepage = () => {
           Global Crypto Stats
         </h2>
 
-        <div className="statscontainer grid grid-cols-2 grid-rows-3 gap-4 pt-2">
+        <div className="statscontainer grid grid-cols-2 grid-rows-3 gap-4 pt-2 tablet:mt-2 tablet:mb-2">
           <div className="homestats w-2/4 p-2.5 flex flex-col gap-3">
             <p className="text-lg text-gray-500">Total Cryptocurrencies</p>
             <span className="text-2xl" id="totalCrypto">

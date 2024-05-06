@@ -6,9 +6,9 @@ module.exports = {
     extend: {
       screens: {
         mobile: { min: "100px", max: "500px" },
-        tablet: { min: "501px", max: "1000px" },
-        laptop: { min: "1001px", max: "1400px " },
-        pc: { min: "1401px" },
+        tablet: { min: "501px", max: "768px" },
+        laptop: { min: "769px", max: "1440px " },
+        pc: { min: "1441px" },
       },
       spacing: {
         "object-cover": "100%",
