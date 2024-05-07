@@ -18,7 +18,7 @@ const News = ({ simplified }) => {
           url: "https://cryptocurrency-news2.p.rapidapi.com/v1/coindesk",
           headers: {
             "X-RapidAPI-Key":
-              "801cfd6090msh43ba5a116c51f0ep1004f8jsna6de03eee58b",
+              "07e53fe405mshfb53f09b4c35667p1618fbjsn933bef5d77d2",
             "X-RapidAPI-Host": "cryptocurrency-news2.p.rapidapi.com",
           },
         };
@@ -46,7 +46,7 @@ const News = ({ simplified }) => {
     <div className="newspage w-full">
       <div className="news-container w-full">
         {!simplified && (
-          <div className="searchcrypto laptop:ml-96 tablet:ml-72">
+          <div className="searchcrypto laptop:ml-96 tablet:ml-72 mobile:ml-16 mobile:mt-3 mobile:w-2/3">
             <input
               type="text"
               placeholder="Search News"
@@ -75,7 +75,7 @@ const News = ({ simplified }) => {
                   </p>
                 </div>
                 <div className="provider-container flex items-center flex-row w-full h-1/5 p-2">
-                  <div className="news-provider-image h-5/6 rounded-full overflow-hidden">
+                  <div className="news-provider-image h-4/6 rounded-full overflow-hidden">
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvo1c_r1js9iusKtr9n0SiwbsfmvCG3f4onHqxDVTomg&s"
                       alt=""

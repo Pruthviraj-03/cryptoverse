@@ -21,7 +21,7 @@ const Exchanges = () => {
           },
           headers: {
             "X-RapidAPI-Key":
-              "08295af6edmsh25c9fc24b3b7d6fp1b591ejsn18d6e7fda81d",
+              "801cfd6090msh43ba5a116c51f0ep1004f8jsna6de03eee58b",
             "X-RapidAPI-Host": "coingecko.p.rapidapi.com",
           },
         };
@@ -42,18 +42,18 @@ const Exchanges = () => {
 
   return (
     <div className="exchangepage w-full flex items-center justify-center">
-      <div className="exchange-table w-11/12 border-collapse ml-2 laptop:mb-5 tablet:mb-5">
-        <div className="table-header flex mt-4">
-          <div className="header-item flex-1 p-4 text-center font-bold">
+      <div className="exchange-table w-11/12 border-collapse ml-2 laptop:mb-5 tablet:mb-5 mobile:mb-3 mobile:ml-0 mobile:overflow-x-hidden mobile:w-full">
+        <div className="table-header flex mt-4 mobile:mt-0">
+          <div className="header-item flex-1 p-4 text-center font-bold mobile:text-sm">
             Exchanges
           </div>
-          <div className="header-item flex-1 p-4 text-center font-bold">
+          <div className="header-item flex-1 p-4 text-center font-bold mobile:text-sm">
             24h Trade Volume
           </div>
-          <div className="header-item flex-1 p-4 text-center font-bold">
+          <div className="header-item flex-1 p-4 text-center font-bold mobile:text-sm">
             Markets
           </div>
-          <div className="header-item flex-1 p-4 text-center font-bold">
+          <div className="header-item flex-1 p-4 text-center font-bold mobile:text-sm">
             Change
           </div>
         </div>
