@@ -99,7 +99,7 @@ const CryptoDetails = () => {
 
   return (
     <>
-      <div className="coin-detail-container w-11/12 mx-auto p-5 mb-10">
+      <div className="coin-detail-container w-11/12 mx-auto p-5 mb-10 mobile:p-1.5 mobile:mb-5">
         <div className="coin-heading-container text-center my-5">
           <h2 className="coin-name">
             {data?.data?.coin.name} ({data?.data?.coin.symbol}) Price
@@ -128,8 +128,8 @@ const CryptoDetails = () => {
           coinName={cryptoDetails?.name}
         />
 
-        <div className="stats-container flex justify-between my-10">
-          <div className="coin-value-statistics w-2/5">
+        <div className="stats-container flex justify-between my-10 mobile:flex mobile:flex-col mobile:gap-6">
+          <div className="coin-value-statistics w-2/5 mobile:w-full">
             <div className="coin-value-statistics-heading">
               <h3 className="coin-details-heading text-xl font-semibold">
                 {cryptoDetails.name} Value Statistics
@@ -152,7 +152,7 @@ const CryptoDetails = () => {
               </div>
             ))}
           </div>
-          <div className="other-stats-info w-2/5">
+          <div className="other-stats-info w-2/5 mobile:w-full">
             <div className="coin-value-statistics-heading">
               <h3 className="coin-details-heading text-xl font-semibold">
                 Other Stats Info
@@ -184,7 +184,7 @@ const CryptoDetails = () => {
             </h3>
             <p className="mt-4">{HTMLReactParser(cryptoDetails.description)}</p>
           </div>
-          <div className="coin-links">
+          <div className="coin-links mobile:mt-4">
             <h3 className="coin-details-heading text-xl font-semibold">
               {cryptoDetails.name} Links
             </h3>
